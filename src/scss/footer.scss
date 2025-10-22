@@ -1,0 +1,244 @@
+//====================================================================================================
+.footer {
+  position: relative;
+  @include adaptiveValue("margin-top", 227, 100);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #040322;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1403px;
+    bottom: -400%;
+    left: 0;
+    z-index: -1;
+    transform: rotate(360deg);
+    background-image: url('@img/decor/footer-decor.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    fill: url('@img/decor/footer-decor.png'), lightgray 0px 0px / 100% 136.332% no-repeat;
+    mix-blend-mode: lighten;
+
+    @media (max-width: em(1222)) {
+      background-image: none;
+    }
+  }
+
+  /* .footer__container */
+
+  &__container {}
+
+  /* .footer__wrapp */
+
+  &__wrapp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 15px;
+
+    @media (max-width: em(778)) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      justify-content: center;
+      align-self: center;
+    }
+  }
+
+  /* .footer__item */
+
+  &__item {
+    display: flex;
+    align-items: center;
+    @include adaptiveValue("gap", 15, 8);
+  }
+
+  &__item_center {
+    justify-self: center;
+  }
+
+  &__item_centertwo {
+    @media (max-width: em(778)) {
+      justify-self: flex-start;
+      @include adaptiveValue("margin-left", 300, 80);
+    }
+    @media (max-width: em(556)){
+        margin-left: 0;
+    }
+  }
+
+  &__item_left {
+    justify-self: flex-end;
+
+    @media (max-width: em(778)) {
+      justify-self: flex-start;
+      @include adaptiveValue("margin-left", 300, 80);
+    }
+    @media (max-width: em(556)){
+        margin-left: 0;
+    }
+  }
+
+  /* .footer__social */
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    @include adaptiveValue("gap", 35, 17);
+
+    @media (max-width: em(778)) {
+      display: none;
+    }
+  }
+
+  /* .footer__vk-link */
+
+  &__vk-link {}
+
+  /* .footer__vk-icon */
+
+  &__vk-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* .footer__odnoklasniki-link */
+
+  &__odnoklasniki-link {}
+
+  /* .footer__odnoklasniki-icon */
+
+  &__odnoklasniki-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* .footer__git-link */
+
+  &__git-link {}
+
+  /* .footer__git-icon */
+
+  &__git-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* .footer__youtube-link */
+
+  &__youtube-link {}
+
+  /* .footer__youtube-icon */
+
+  &__youtube-icon {
+    width: 35px;
+    height: 24px;
+  }
+
+  /* .footer__logo */
+
+  &__logo {}
+
+  /* .footer__link */
+
+  &__link {}
+
+  /* .footer__link-icon */
+
+  &__link-icon {
+    width: 228px;
+    height: 50px;
+    @include adaptiveValue("width", 228, 142);
+    @include adaptiveValue("height", 50, 32);
+  }
+
+  /* .footer__tel-link */
+
+  &__tel-link {}
+
+  /* .footer__tel-icon */
+
+  &__tel-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* .footer__box */
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .footer__box-link */
+
+  &__box-link {}
+
+  /* .footer__box-btn */
+
+  &__box-btn {
+    color: #F2FF5A;
+    text-align: right;
+    font-family: AnonymousPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+
+  /* .footer__address-icon */
+
+  &__address-icon {
+    width: 30px;
+    height: 40px;
+  }
+
+  /* .footer__item-address-box */
+
+  &__item-address-box {}
+
+  /* .footer__item-address */
+
+  &__item-address {
+    margin-bottom: 5px;
+  }
+
+  /* .footer__item-address-text */
+
+  &__item-address-text {}
+
+  /* .footer__item-copyright */
+
+  &__item-copyright {
+    @media (max-width: em(778)) {
+      display: none;
+    }
+  }
+
+  /* .footer__email-icon */
+
+  &__email-icon {
+    width: 30px;
+    height: 24px;
+  }
+
+  /* .footer__item-email-box */
+
+  &__item-email-box {}
+
+  /* .footer__item-email-text */
+
+  &__item-email-text {
+    margin-bottom: 5px;
+  }
+
+  /* .footer__item-email */
+
+  &__item-email {}
+}
+
+//====================================================================================================
