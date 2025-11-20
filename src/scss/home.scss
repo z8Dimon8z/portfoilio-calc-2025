@@ -9,118 +9,142 @@
   padding-top: 100px;
 }
 
-.calculator {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  padding: 30px;
-  max-width: 500px;
-  width: 100%;
-}
+    .calculator {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            max-width: 550px;
+            width: 100%;
+        }
 
-h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 30px;
-  font-size: 24px;
-}
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
 
-.form-group {
-  margin-bottom: 20px;
-}
+        .form-group {
+            margin-bottom: 20px;
+        }
 
-label {
-  display: block;
-  margin-bottom: 8px;
-  color: #555;
-  font-weight: bold;
-}
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: bold;
+        }
 
-input,
-select {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border-color 0.3s;
-}
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
 
-input:focus,
-select:focus {
-  outline: none;
-  border-color: #667eea;
-}
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
 
-.checkbox-group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
 
-.checkbox-group input {
-  width: auto;
-}
+        .checkbox-group input {
+            width: auto;
+        }
 
-.btn-calc {
-  width: 100%;
-  padding: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
+        .sub-options {
+            margin-left: 30px;
+            margin-top: 10px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
 
-.btn-calc:hover {
-  transform: translateY(-2px);
-}
+        .sub-options label {
+            font-size: 14px;
+            color: #666;
+        }
 
-.result {
-  margin-top: 30px;
-  padding: 20px;
-  background: #f8f9fa;
-  border-radius: 8px;
-  border-left: 4px solid #667eea;
-}
+        .btn-calc{
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin-top: 10px;
+        }
 
-.result h3 {
-  color: #333;
-  margin-bottom: 15px;
-}
+        button:hover {
+            transform: translateY(-2px);
+        }
 
-.price-breakdown {
-  margin-top: 15px;
-}
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
 
-.price-item {
-  display: flex;
-  justify-content: between;
-  margin-bottom: 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #eee;
-}
+        .result h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
 
-.price-item:last-child {
-  border-bottom: none;
-}
+        .price-breakdown {
+            margin-top: 15px;
+        }
 
-.price-label {
-  flex: 1;
-  color: #666;
-}
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
 
-.price-value {
-  font-weight: bold;
-  color: #333;
-}
+        .price-item:last-child {
+            border-bottom: none;
+        }
 
-.total {
-  font-size: 20px;
-  color: #667eea;
-  font-weight: bold;
-  margin-top: 10px;
-}
+        .price-label {
+            flex: 1;
+            color: #666;
+        }
+
+        .price-value {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .total {
+            font-size: 20px;
+            color: #667eea;
+            font-weight: bold;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 2px solid #ddd;
+        }
+
+        .wp-options {
+            display: none;
+        }
+
+        .wp-options.active {
+            display: block;
+        }
